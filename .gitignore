@@ -1,0 +1,49 @@
+# Python virtual environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local environment files and credentials
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+.envrc.*
+!/.env.example
+/.streamlit/secrets.toml
+/.streamlit/secrets.*
+secrets/
+.secrets/
+credentials.json
+api_key
+api_key.*
+api_keys
+api_keys.*
+api-key
+api-key.*
+api-keys
+api-keys.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Private workspace settings and local acceptance screenshots
+/.agents/
+/.aws/
+/.codex/
+/.idea/
+/.vscode/
+/screenshots/
+
+# Generated outputs and temporary files
+/outputs/*
+*.tmp
+*.temp
+*.log

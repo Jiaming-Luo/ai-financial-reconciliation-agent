@@ -1,0 +1,7 @@
+# Financial engine and Mock analysis use only the Python standard library.
+openai==2.54.0
+# Used directly by the offline SDK transport tests.
+httpx==0.28.1
+
+# Local bilingual product UI and its AppTest integration tests.
+streamlit==1.66.0

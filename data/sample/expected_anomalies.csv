@@ -1,0 +1,11 @@
+case_id,hospital_id,settlement_period,service_id,payment_id,expected_type,expected_result
+CASE-001,SIM-H001,2026-01,,SIM-P0001,MATCHED,SIM-P0001 and SIM-P0002 total CNY 9284.00 with zero variance.
+CASE-002,SIM-H001,2026-02,,,MISSING_PAYMENT,No payment exists for CNY 9575.30 due.
+CASE-003,SIM-H002,2026-02,,SIM-P0008,UNDERPAYMENT,Eligible payments are CNY 15.00 below the receivable.
+CASE-004,SIM-H002,2026-03,,SIM-P0009,OVERPAYMENT,Eligible payments are CNY 22.00 above the receivable.
+CASE-005,SIM-H003,2026-03,,SIM-P0016,DUPLICATE_PAYMENT,SIM-P0016 repeats SIM-P0015; count CNY 11895.80 once.
+CASE-006,SIM-H003,2026-04,SIM-S0187,,PRICE_MISMATCH,Reported amount is CNY 922.40; contract amount is CNY 918.40. The group remains balanced on contract amounts.
+CASE-007,SIM-H005,2026-06,SIM-S0299,,MISSING_CONTRACT,No active ANTIGEN contract matches the line; hold the group for review.
+CASE-008,SIM-H004,2026-05,SIM-S0273,,CONTRACT_OVERLAP,SIM-C0032 and the base contract both cover the line; hold the group for review.
+CASE-009,SIM-H006,2026-05,,SIM-P0032,UNMATCHED_PAYMENT,A valid CNY 875.00 payment has no service rows in its group.
+CASE-010,SIM-H004,2026-06,SIM-S0264,,INVALID_DATA,Quantity -1 violates the positive integer rule; hold the group for review.
